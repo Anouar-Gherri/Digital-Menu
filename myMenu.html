@@ -41,7 +41,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
 </header>
 
 <!-- Header for small screens -->
-<header class="bgimgSMALL w3-display-container w3-hide-large w3-hide-medium" id="home">
+<header class="bgimgSMALL w3-display-container w3-hide-large w3-hide-medium w3-panel" id="home">
   <div class="w3-display-bottomleft w3-padding">
     <span class="w3-tag w3-xlarge w3-red">Open from 10am to 12pm</span>
   </div>
@@ -56,51 +56,56 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
   <div class="w3-content">
   
     <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">THE MENU</h1>
-    <div class="w3-row w3-center w3-border w3-border-dark-grey">
+    <div class="w3-row w3-center w3-border w3-border-white">
       <a href="javascript:void(0)" onclick="openMenu(event, 'Pizza');" id="myLink">
-        <div class="w3-col s4 tablink w3-padding-large w3-hover-red w3-hide-large w3-hide-medium" ><p style="font-size:15px; font-weight: bold;">Suppen</p></div>
+        <div class="w3-col s4 tablink w3-padding-small w3-hover-red w3-hide-large w3-hide-medium  " ><p style="font-size:25px; font-weight: bold;">Suppen</p></div>
         <div class="w3-col s4 tablink w3-padding-large w3-hover-red w3-hide-large w3-hide-small" ><p style="font-size:30px; font-weight: bold;">Suppen</p></div>
         <div class="w3-col s4 tablink w3-padding-large w3-hover-red w3-hide-small w3-hide-medium">Suppen</div>
       </a>
       <a href="javascript:void(0)" onclick="openMenu(event, 'Pasta');">
-        <div class="w3-col s4 tablink w3-padding-large w3-hover-red w3-hide-large w3-hide-medium" ><p style="font-size:15px; font-weight: bold;">Kalte Vorspeisen</p></div>
-        <div class="w3-col s4 tablink w3-padding-large w3-hover-red w3-hide-large w3-hide-small" ><p style="font-size:30px; font-weight: bold;">Kalte Vorspeisen</p></div>
-        <div class="w3-col s4 tablink w3-padding-large w3-hover-red w3-hide-small w3-hide-medium">Kalte Vorspeisen</div>
+        <div class="w3-col s4 tablink w3-padding-small w3-hover-red w3-hide-large w3-hide-medium w3-border " ><p style="font-size:25px; font-weight: bold;">Vorspeisen</p></div>
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red w3-hide-large w3-hide-small" ><p style="font-size:30px; font-weight: bold;">Vorspeisen</p></div>
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red w3-hide-small w3-hide-medium">Vorspeisen</div>
       </a>
       <a href="javascript:void(0)" onclick="openMenu(event, 'Starter');">
-        <div class="w3-col s4 tablink w3-padding-large w3-hover-red w3-hide-large w3-hide-medium" ><p style="font-size:15px; font-weight: bold;">Vegetarische Gerichte</p></div>
-        <div class="w3-col s4 tablink w3-padding-large w3-hover-red w3-hide-large w3-hide-small" ><p style="font-size:30px; font-weight: bold;">Vegetarische Gerichte</p></div>
-        <div class="w3-col s4 tablink w3-padding-large w3-hover-red w3-hide-small w3-hide-medium">Vegetarische Gerichte</div>
+        <div class="w3-col s4 tablink w3-padding-small w3-hover-red w3-hide-large w3-hide-medium w3-border " ><p style="font-size:25px; font-weight: bold;">Vegetarische</p></div>
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red w3-hide-large w3-hide-small" ><p style="font-size:30px; font-weight: bold;">Vegetarische</p></div>
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red w3-hide-small w3-hide-medium">Vegetarische</div>
       </a>
       <a href="javascript:void(0)" onclick="openMenu(event, 'Starter');">
-        <div class="w3-col s4 tablink w3-padding-large w3-hover-red w3-hide-large w3-hide-medium" ><p style="font-size:15px; font-weight: bold;">Hauptgerichte</p></div>
+        <div class="w3-col s4 tablink w3-padding-small w3-hover-red w3-hide-large w3-hide-medium w3-border " ><p style="font-size:25px; font-weight: bold;">Hauptgerichte</p></div>
         <div class="w3-col s4 tablink w3-padding-large w3-hover-red w3-hide-large w3-hide-small" ><p style="font-size:30px; font-weight: bold;">Hauptgerichte</p></div>
         <div class="w3-col s4 tablink w3-padding-large w3-hover-red w3-hide-small w3-hide-medium">Hauptgerichte</div>
       </a>
       <a href="javascript:void(0)" onclick="openMenu(event, 'Starter');">
-        <div class="w3-col s4 tablink w3-padding-large w3-hover-red w3-hide-large w3-hide-medium" ><p style="font-size:15px;; font-weight: bold;">Grillspezialitäten</p></div>
+        <div class="w3-col s4 tablink w3-padding-small w3-hover-red w3-hide-large w3-hide-medium w3-border " ><p style="font-size:25px;; font-weight: bold;">Grillspezialitäten</p></div>
         <div class="w3-col s4 tablink w3-padding-large w3-hover-red w3-hide-large w3-hide-small" ><p style="font-size:30px; font-weight: bold;">Grillspezialitäten</p></div>
         <div class="w3-col s4 tablink w3-padding-large w3-hover-red w3-hide-small w3-hide-medium">Grillspezialitäten</div>
       </a>
       <a href="javascript:void(0)" onclick="openMenu(event, 'Starter');">
-        <div class="w3-col s4 tablink w3-padding-large w3-hover-red w3-hide-large w3-hide-medium" ><p style="font-size:15px; font-weight: bold;">Fischgerichte</p></div>
+        <div class="w3-col s4 tablink w3-padding-small w3-hover-red w3-hide-large w3-hide-medium w3-border " ><p style="font-size:25px; font-weight: bold;">Fischgerichte</p></div>
         <div class="w3-col s4 tablink w3-padding-large w3-hover-red w3-hide-large w3-hide-small" ><p style="font-size:30px; font-weight: bold;">Fischgerichte</p></div>
         <div class="w3-col s4 tablink w3-padding-large w3-hover-red w3-hide-small w3-hide-medium">Fischgerichte</div>
       </a>
       <a href="javascript:void(0)" onclick="openMenu(event, 'Starter');">
-        <div class="w3-col s4 tablink w3-padding-large w3-hover-red w3-hide-large w3-hide-medium" ><p style="font-size:15px; font-weight: bold;">Desserts</p></div>
+        <div class="w3-col s4 tablink w3-padding-small w3-hover-red w3-hide-large w3-hide-medium w3-border " ><p style="font-size:25px; font-weight: bold;">Desserts</p></div>
         <div class="w3-col s4 tablink w3-padding-large w3-hover-red w3-hide-large w3-hide-small" ><p style="font-size:30px; font-weight: bold;">Desserts</p></div>
         <div class="w3-col s4 tablink w3-padding-large w3-hover-red w3-hide-small w3-hide-medium">Desserts</div>
       </a>
       <a href="javascript:void(0)" onclick="openMenu(event, 'Starter');">
-        <div class="w3-col s4 tablink w3-padding-large w3-hover-red w3-hide-large w3-hide-medium" ><p style="font-size:15px; font-weight: bold;">Säfte</p></div>
+        <div class="w3-col s4 tablink w3-padding-small w3-hover-red w3-hide-large w3-hide-medium w3-border " ><p style="font-size:25px; font-weight: bold;">Säfte</p></div>
         <div class="w3-col s4 tablink w3-padding-large w3-hover-red w3-hide-large w3-hide-small" ><p style="font-size:30px; font-weight: bold;">Säfte</p></div>
         <div class="w3-col s4 tablink w3-padding-large w3-hover-red w3-hide-small w3-hide-medium" >Säfte</div>
       </a>
       <a href="javascript:void(0)" onclick="openMenu(event, 'Starter');">
-        <div class="w3-col s4 tablink w3-padding-large w3-hover-red w3-hide-large w3-hide-medium" ><p style="font-size:15px; font-weight: bold;">Heiße getränke</p></div>
-        <div class="w3-col s4 tablink w3-padding-large w3-hover-red w3-hide-large w3-hide-small" ><p style="font-size:30px; font-weight: bold;">Heiße getränke</p></div>
-        <div class="w3-col s4 tablink w3-padding-large w3-hover-red w3-hide-small w3-hide-medium">Heiße getränke</div>
+        <div class="w3-col s4 tablink w3-padding-small w3-hover-red w3-hide-large w3-hide-medium w3-border " ><p style="font-size:25px; font-weight: bold;">Getränke</p></div>
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red w3-hide-large w3-hide-small" ><p style="font-size:30px; font-weight: bold;">Getränke</p></div>
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red w3-hide-small w3-hide-medium">Getränke</div>
+      </a>
+            <a href="javascript:void(0)" onclick="openMenu(event, 'Starter');">
+        <div class="w3-col s4 tablink w3-padding-small w3-hover-red w3-hide-large w3-hide-medium w3-border " ><p style="font-size:25px; font-weight: bold;">Getränke</p></div>
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red w3-hide-large w3-hide-small" ><p style="font-size:30px; font-weight: bold;">Getränke</p></div>
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red w3-hide-small w3-hide-medium">Getränke</div>
       </a>
     </div>
 
