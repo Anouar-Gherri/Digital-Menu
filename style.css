@@ -1,0 +1,16 @@
+body, html {height: 100%}
+body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
+.menu {display: none}
+.bgimgBIG {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("cover.jpg");
+  min-height: 100%;
+
+}
+.bgimgSMALL {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("cover.jpg");
+  min-height: 100%;
+}

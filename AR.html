@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html dir="rtl" lang="ar">
 <head>
 <title>Menu</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
 <style>
 body, html {height: 100%}
@@ -32,7 +33,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
   
 <!-- Header with for big screens -->
 <header class="bgimgBIG w3-display-container w3-hide-small w3-hide-medium" id="home">
-  <div class="w3-display-bottomleft w3-padding">
+  <div class="w3-display-bottomright w3-padding">
     <span class="w3-tag w3-xlarge w3-red">مفتوح من الساعة 10 صباحًا حتى الساعة 12 ظهرًا</span>
   </div>
   <div class="w3-display-middle w3-center">
@@ -42,7 +43,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
 </header>
 <!-- Header with for meduim and big screens -->
 <header class="bgimgBIG w3-display-container w3-hide-small w3-hide-large" id="home">
-  <div class="w3-display-bottomleft w3-padding">
+  <div class="ww3-display-bottomright w3-padding">
     <span class="w3-tag w3-xlarge w3-red">مفتوح من الساعة 10 صباحًا حتى الساعة 12 ظهرًا</span>
   </div>
   <div class="w3-display-middle w3-center">
@@ -53,8 +54,8 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
 
 <!-- Header for small screens -->
 <header class="bgimgSMALL w3-display-container w3-hide-large w3-hide-medium" id="home">
-  <div class="w3-display-bottomleft w3-padding">
-    <span class="w3-tag w3-xlarge w3-red">مفتوح من الساعة 10 صباحًا حتى الساعة 12 ظهرًا</span>
+  <div class="w3-display-bottomright w3-padding">
+    <span class="w3-tag w3-large w3-red">مفتوح من الساعة 10 صباحًا حتى الساعة 12 ظهرًا</span>
   </div>
   <div class="w3-display-middle w3-center">
     <span class="w3-text-white" style="font-size:80px; font-weight: bold;">العالم الإيطالي</span>
@@ -68,29 +69,32 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
   
     <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">قائمة الطعام</h1>
     <div class="w3-row w3-center w3-border w3-border-white">
-      <a href="javascript:void(0)" onclick="openMenu(event, 'بيتزا');" id="myLink">
-        <div class="div1 w3-col s4 tablink w3-padding-small w3-hover-red w3-hide-large w3-hide-medium w3-border " ><p style="font-size:25px; font-weight: bold;">بيتزا</p></div>
-        <div class="div1 w3-col s4 tablink w3-padding-large w3-hover-red w3-hide-large w3-hide-small w3-border" ><p style="font-size:30px; font-weight: bold;">بيتزا</p></div>
-        <div class="div1 w3-col s4 tablink w3-padding-large w3-hover-red w3-hide-small w3-hide-medium w3-border">بيتزا</div>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'مشروبات');">
+        <div class="div1 w3-col s4 tablink w3-padding-small w3-hover-red w3-hide-large w3-hide-medium w3-border " ><p style="font-size:25px; font-weight: bold;">مشروبات</p></div>
+        <div class="div1 w3-col s4 tablink w3-padding-large w3-hover-red w3-hide-large w3-hide-small w3-border" ><p style="font-size:30px; font-weight: bold;">مشروبات</p></div>
+        <div class="div1 w3-col s4 tablink w3-padding-large w3-hover-red w3-hide-small w3-hide-medium w3-border">مشروبات</div>
       </a>
       <a href="javascript:void(0)" onclick="openMenu(event, 'معكرونة');">
         <div class="div2 w3-col s4 tablink w3-padding-small w3-hover-red w3-hide-large w3-hide-medium w3-border " ><p style="font-size:25px; font-weight: bold;">معكرونة</p></div>
         <div class="div2 w3-col s4 tablink w3-padding-large w3-hover-red w3-hide-large w3-hide-small w3-border" ><p style="font-size:30px; font-weight: bold;">معكرونة</p></div>
         <div class="div2 w3-col s4 tablink w3-padding-large w3-hover-red w3-hide-small w3-hide-medium w3-border">معكرونة</div>
       </a>
-            <a href="javascript:void(0)" onclick="openMenu(event, 'مشروبات');">
-        <div class="w3-col s4 tablink w3-padding-small w3-hover-red w3-hide-large w3-hide-medium w3-border " ><p style="font-size:25px; font-weight: bold;">مشروبات</p></div>
-        <div class="w3-col s4 tablink w3-padding-large w3-hover-red w3-hide-large w3-hide-small w3-border" ><p style="font-size:30px; font-weight: bold;">مشروبات</p></div>
-        <div class="w3-col s4 tablink w3-padding-large w3-hover-red w3-hide-small w3-hide-medium w3-border">مشروبات</div>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'بيتزا');" id="myLink">
+        <div class="w3-col s4 tablink w3-padding-small w3-hover-red w3-hide-large w3-hide-medium w3-border " ><p style="font-size:25px; font-weight: bold;">بيتزا</p></div>
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red w3-hide-large w3-hide-small w3-border" ><p style="font-size:30px; font-weight: bold;">بيتزا</p></div>
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red w3-hide-small w3-hide-medium w3-border">بيتزا</div>
       </a>
     </div>
 
     <div id="بيتزا" class="w3-container menu w3-padding-32 w3-white w3-animate-zoom">
-      <h1><b>مارغريتا</b> <span class="w3-right w3-tag w3-dark-grey w3-round">€12.50</span></h1>
+      <span class="w3-left w3-tag w3-dark-grey w3-round">€12.50</span>
+      <h1 class="w3-right"> <b>مارغريتا</b></h1>
+      <br>
       <p class="w3-text-grey w3-xlarge"> طماطم طازجة ، جبنة موتزاريلا طازجة ، ريحان طازج</p>
       <hr>
    
-      <h1><b>Formaggio</b> <span class="w3-right w3-tag w3-dark-grey w3-round">€15.50</span></h1>
+      <span class="w3-left w3-tag w3-dark-grey w3-round">€15.50</span>
+      <h1><b>فورماجيو</b></h1>
       <p class="w3-text-grey w3-xlarge">أربعة أنواع من الجبن (موزاريلا ، بارميزان ، بيكورينو ، جارلسبرغ)</p>
       <hr>
       
@@ -123,7 +127,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
       <p class="w3-text-grey w3-xlarge">Fresh tomatoes, onions, ground beef</p>
       <hr>
 
-      <h1><b>Seafood معكرونة</b> <span class="w3-right w3-tag w3-dark-grey w3-round">€25.50</span></h1>
+      <h1><b>Seafood</b> <span class="w3-right w3-tag w3-dark-grey w3-round">€25.50</span></h1>
       <p class="w3-text-grey w3-xlarge">Salmon, shrimp, lobster, garlic</p>
     </div>
 
