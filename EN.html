@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Menu</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+<style>
+body, html {height: 100%}
+body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
+.menu {display: none}
+.bgimgBIG {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("cover.jpg");
+  min-height: 100%;
+
+}
+.bgimgSMALL {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("cover.jpg");
+  min-height: 100%;
+}
+
+</style>
+</head>
+<body>
+
+
+  
+<!-- Header with for big screens -->
+<header class="bgimgBIG w3-display-container w3-hide-small w3-hide-medium" id="home">
+  <div class="w3-display-bottomleft w3-padding">
+    <span class="w3-tag w3-xlarge w3-red">Open from 10am to 12pm</span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white" style="font-size:150px; font-weight: 900;">The Italian World</span>
+    <p><a href="#menu" class="w3-button w3-xxlarge w3-red w3-hover-red">Let me see the menu</a></p>
+  </div>
+</header>
+<!-- Header with for meduim and big screens -->
+<header class="bgimgBIG w3-display-container w3-hide-small w3-hide-large" id="home">
+  <div class="w3-display-bottomleft w3-padding">
+    <span class="w3-tag w3-xlarge w3-red">Open from 10am to 12pm</span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white" style="font-size:100px; font-weight: 900;">The Italian World</span>
+    <p><a href="#menu" class="w3-button w3-xxlarge w3-red w3-hover-red">Let me see the menu</a></p>
+  </div>
+</header>
+
+<!-- Header for small screens -->
+<header class="bgimgSMALL w3-display-container w3-hide-large w3-hide-medium" id="home">
+  <div class="w3-display-bottomleft w3-padding">
+    <span class="w3-tag w3-xlarge w3-red">Open from 10am to 12pm</span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white" style="font-size:80px; font-weight: bold;">The Italian World</span>
+    <p><a href="#menu" class="w3-button w3-xxlarge w3-red w3-hover-red">Let me see the menu</a></p>
+
+</header>
+
+<!-- Menu Container -->
+<div class="w3-container w3-black w3-padding-64 w3-xxlarge" id="menu">
+  <div class="w3-content">
+  
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">THE MENU</h1>
+    <div class="w3-row w3-center w3-border w3-border-white">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Pizza');" id="myLink">
+        <div class="div1 w3-col s4 tablink w3-padding-small w3-hover-red w3-hide-large w3-hide-medium w3-border " ><p style="font-size:25px; font-weight: bold;">Pizza</p></div>
+        <div class="div1 w3-col s4 tablink w3-padding-large w3-hover-red w3-hide-large w3-hide-small w3-border" ><p style="font-size:30px; font-weight: bold;">Pizza</p></div>
+        <div class="div1 w3-col s4 tablink w3-padding-large w3-hover-red w3-hide-small w3-hide-medium w3-border">Pizza</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Pasta');">
+        <div class="div2 w3-col s4 tablink w3-padding-small w3-hover-red w3-hide-large w3-hide-medium w3-border " ><p style="font-size:25px; font-weight: bold;">Pasta</p></div>
+        <div class="div2 w3-col s4 tablink w3-padding-large w3-hover-red w3-hide-large w3-hide-small w3-border" ><p style="font-size:30px; font-weight: bold;">Pasta</p></div>
+        <div class="div2 w3-col s4 tablink w3-padding-large w3-hover-red w3-hide-small w3-hide-medium w3-border">Pasta</div>
+      </a>
+            <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
+        <div class="w3-col s4 tablink w3-padding-small w3-hover-red w3-hide-large w3-hide-medium w3-border " ><p style="font-size:25px; font-weight: bold;">Drinks</p></div>
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red w3-hide-large w3-hide-small w3-border" ><p style="font-size:30px; font-weight: bold;">Drinks</p></div>
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red w3-hide-small w3-hide-medium w3-border">Drinks</div>
+      </a>
+    </div>
+
+    <div id="Pizza" class="w3-container menu w3-padding-32 w3-white w3-animate-zoom">
+      <h1><b>Margherita</b> <span class="w3-right w3-tag w3-dark-grey w3-round">€12.50</span></h1>
+      <p class="w3-text-grey w3-xlarge">Fresh tomatoes, fresh mozzarella, fresh basil</p>
+      <hr>
+   
+      <h1><b>Formaggio</b> <span class="w3-right w3-tag w3-dark-grey w3-round">€15.50</span></h1>
+      <p class="w3-text-grey w3-xlarge">Four cheeses (mozzarella, parmesan, pecorino, jarlsberg)</p>
+      <hr>
+      
+      <h1><b>Chicken</b> <span class="w3-right w3-tag w3-dark-grey w3-round">€17.00</span></h1>
+      <p class="w3-text-grey w3-xlarge">Fresh tomatoes, mozzarella, chicken, onions</p>
+      <hr>
+
+      <h1><b>Pineapple'o'clock</b> <span class="w3-right w3-tag w3-dark-grey w3-round">€16.50</span></h1>
+      <p class="w3-text-grey w3-xlarge">Fresh tomatoes, mozzarella, fresh pineapple,  fresh basil</p>
+      <hr>
+
+      <h1><b>Meat Town</b> <span class="w3-tag w3-red w3-round">Hot!</span><span class="w3-right w3-tag w3-dark-grey w3-round">€20.00</span></h1>
+      <p class="w3-text-grey w3-xlarge">Fresh tomatoes, mozzarella, hot pepporoni, hot sausage, beef, chicken</p>
+      <hr>
+
+      <h1><b>Parma</b> <span class="w3-tag w3-grey w3-round">New</span><span class="w3-right w3-tag w3-dark-grey w3-round">€21.50</span></h1>
+      <p class="w3-text-grey w3-xlarge">Fresh tomatoes, mozzarella, parma,  fresh arugula</p>
+    </div>
+
+    <div id="Pasta" class="w3-container menu w3-padding-32 w3-white w3-animate-zoom">
+      <h1><b>Lasagna</b> <span class="w3-tag w3-grey w3-round">Popular</span> <span class="w3-right w3-tag w3-dark-grey w3-round">€13.50</span></h1>
+      <p class="w3-text-grey w3-xlarge">Special sauce, mozzarella, parmesan, ground beef</p>
+      <hr>
+   
+      <h1><b>Ravioli</b> <span class="w3-right w3-tag w3-dark-grey w3-round">€14.50</span></h1>
+      <p class="w3-text-grey w3-xlarge">Ravioli filled with cheese</p>
+      <hr>
+      
+      <h1><b>Spaghetti Classica</b> <span class="w3-right w3-tag w3-dark-grey w3-round">€11.00</span></h1>
+      <p class="w3-text-grey w3-xlarge">Fresh tomatoes, onions, ground beef</p>
+      <hr>
+
+      <h1><b>Seafood pasta</b> <span class="w3-right w3-tag w3-dark-grey w3-round">€25.50</span></h1>
+      <p class="w3-text-grey w3-xlarge">Salmon, shrimp, lobster, garlic</p>
+    </div>
+
+
+    <div id="Drinks" class="w3-container menu w3-padding-32 w3-white w3-animate-zoom">
+      <h1><b>Coca-Cola</b><span class="w3-right w3-tag w3-dark-grey w3-round">€2.50</span></h1>
+      <p class="w3-text-grey w3-xlarge">0.5 Liter of Coca-Cola</p>
+      <hr>
+   
+      <h1><b>Fanta</b> <span class="w3-right w3-tag w3-dark-grey w3-round">€2.50</span></h1>
+      <p class="w3-text-grey w3-xlarge">0.5 Liter of Fanta</p>
+      <hr>
+      
+      <h1><b>Sprite</b> <span class="w3-right w3-tag w3-dark-grey w3-round">€2.50</span></h1>
+      <p class="w3-text-grey w3-xlarge">0.5 Liter of Sprite</p>
+      <hr>
+      
+      <h1><b>Orange juice</b> <span class="w3-right w3-tag w3-dark-grey w3-round">€2.50</span></h1>
+      <p class="w3-text-grey w3-xlarge">0.5 Liter of Orange juice</p>
+    </div><br>
+
+  </div>
+</div>
+
+
+
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-48 w3-medium">
+  <p>Powered by Omar and Anouar</a></p>
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+     tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-black";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
